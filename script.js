@@ -2,30 +2,30 @@ const express = require('express');
 const path = require('path'); // Import the path module to work with file paths
 const app = express();
 
-// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('^/$|/index(.html)?', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'))
+    res.sendFile(path.join(__dirname, 'views', 'index.html'))
   })
 
   app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'about.html'))
+    res.sendFile(path.join(__dirname, 'views', 'about.html'))
   })
 
   app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname,  'contact.html'))
+    res.sendFile(path.join(__dirname, 'views', 'contact.html'))
   })
 
   app.get('/furniture-website', (req, res) => {
-    res.sendFile(path.join(__dirname,  'furniture.html'))
+    res.sendFile(path.join(__dirname, 'views', 'furniture.html'))
   })
 
   app.get('/learning-app', (req, res) => {
-    res.sendFile(path.join(__dirname,  'learningapp.html'))
+    res.sendFile(path.join(__dirname, 'views', 'learningapp.html'))
   })
 
   app.get('/hotel-website', (req, res) => {
-    res.sendFile(path.join(__dirname,  'hotel-website.html'))
+    res.sendFile(path.join(__dirname, 'views', 'hotel-website.html'))
   })
 
 
