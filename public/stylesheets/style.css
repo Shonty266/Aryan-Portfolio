@@ -1,0 +1,117 @@
+@font-face {
+  font-family: name; 
+  src: url('/fonts/Capriola-Regular.ttf');
+}
+
+@font-face {
+  font-family: links; 
+  src: url('/fonts/Homenaje-Regular.ttf');
+}
+
+@font-face {
+  font-family: links-text; 
+  src: url('/fonts/Oswald-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: name;
+    
+}
+
+.links{
+  font-family: links-text;
+}
+
+.menu{
+  height:calc(100vh - 100px);
+}
+
+
+
+/* @keyframes blob {
+  0%, 100% {
+    transform: translateY(-30%) translateX(50%);
+    animation-timing-function: cubic-bezier(0.8, 0.8, 0.8, 0.8);
+  }
+  50% {
+    transform: translateY(0) translateX(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0.8, 0.8, 0.8);
+  }
+}
+
+
+.blob{
+  animation: blob 10s infinite ;
+} */
+
+
+@keyframes wave-animation {
+  0% {
+      transform: rotate(0.0deg);
+  }
+  10% {
+      transform: rotate(14.0deg);
+  }
+  20% {
+      transform: rotate(-8.0deg);
+  }
+  30% {
+      transform: rotate(14.0deg);
+  }
+  40% {
+      transform: rotate(-4.0deg);
+  }
+  50% {
+      transform: rotate(10.0deg);
+  }
+  60% {
+      transform: rotate(0.0deg);
+  }
+  100% {
+      transform: rotate(0.0deg);
+  }
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
