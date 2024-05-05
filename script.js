@@ -2,11 +2,10 @@ const express = require('express');
 const path = require('path'); // Import the path module to work with file paths
 const app = express();
 
-// Set the directory where your static files (like index.html) are located
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('^/$|/index(.html)?', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'))
+    res.sendFile(path.join(__dirname, 'index.html'))
   })
 
   app.get('/about', (req, res) => {
