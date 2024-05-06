@@ -105,8 +105,7 @@ images.forEach(image => {
         y: -10,
         ease: 'power2.inOut',
         repeat: -1, // Repeat infinitely
-        yoyo: true,
-        delay:2 // Reverse the animation smoothly
+        yoyo: true,// Reverse the animation smoothly
     });
 
     // Play the animation initially
