@@ -13,6 +13,12 @@
   src: url('../fonts/Oswald-VariableFont_wght.ttf');
 }
 
+@font-face {
+  font-family: heading; 
+  src: url('../fonts/Danfo-Regular-VariableFont_ELSH.ttf');
+}
+
+
 *{
     margin: 0%;
     padding: 0%;
@@ -34,6 +40,9 @@ html, body{
   height:calc(100vh - 100px);
 }
 
+.heading{
+  font-family: name;
+}
 
 
 
