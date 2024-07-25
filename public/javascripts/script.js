@@ -148,4 +148,28 @@ blob2.forEach(blob => {
 });
 
 
+const blob3 = document.querySelectorAll('.blob3');
+
+// Loop through each element in NodeList
+blob3.forEach(blob => {
+    const textAnimation = gsap.fromTo(blob, 
+        { // Starting position
+            x: -50,
+            y: 50
+        }, 
+        { // Ending position
+            duration: 10,
+            x: 50, // Move 100 pixels to the right
+            y: -50, // Move until 100 pixels upwards
+            ease: 'power2.inOut',
+            repeat: -1, // Repeat infinitely
+            yoyo: true // Reverse the animation smoothly
+        }
+    );
+
+    // Play the animation initially
+    textAnimation.play();
+});
+
+
 
